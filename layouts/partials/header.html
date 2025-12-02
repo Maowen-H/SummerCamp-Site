@@ -1,0 +1,13 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <a href="/">Summer Program 2025</a>
+      <span class="logo-sub">NC State Lab</span>
+    </div>
+    <nav class="nav">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+  </div>
+</header>

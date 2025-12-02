@@ -1,0 +1,55 @@
+{{ define "main" }}
+  {{ if .IsHome }}
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1 class="hero-title">Summer Research Training Program 2025</h1>
+        <p class="hero-subtitle">
+          A focused summer research experience in computing and interdisciplinary science.
+        </p>
+        <div class="hero-actions">
+          <a href="/apply/" class="btn-primary">Apply Now</a>
+          <a href="/about/" class="btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <h2>Program Overview</h2>
+        <p class="lead">
+          This program offers structured mentoring, hands-on research projects, and training sessions
+          designed for motivated students interested in computing and its applications.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-3">
+        <div class="card">
+          <h3>Mentored Research</h3>
+          <p>Work closely with faculty and graduate students on real research problems.</p>
+        </div>
+        <div class="card">
+          <h3>Workshops &amp; Talks</h3>
+          <p>Learn core skills in research methods, communication, and technical topics.</p>
+        </div>
+        <div class="card">
+          <h3>Community</h3>
+          <p>Join a cohort of students exploring computing and interdisciplinary science.</p>
+        </div>
+      </div>
+    </section>
+  {{ else }}
+    <section class="section">
+      <div class="container narrow">
+        <h1>{{ .Title }}</h1>
+        {{ if .Params.subtitle }}
+          <p class="page-subtitle">{{ .Params.subtitle }}</p>
+        {{ end }}
+        <div class="page-content">
+          {{ .Content }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}

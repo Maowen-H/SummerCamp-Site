@@ -1,0 +1,31 @@
+baseURL = "https://example.org/"
+languageCode = "en-us"
+title = "Summer Program 2025"
+theme = ""
+
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+  [[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 2
+
+  [[menu.main]]
+  name = "Schedule"
+  url = "/schedule/"
+  weight = 3
+
+  [[menu.main]]
+  name = "Team"
+  url = "/team/"
+  weight = 4
+
+  [[menu.main]]
+  name = "Apply"
+  url = "/apply/"
+  weight = 5
