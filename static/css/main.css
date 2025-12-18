@@ -25,10 +25,14 @@ body {
   padding: 0 1.5rem;
 }
 
-.container.narrow { max-width: 760px; }
+.container.narrow { max-width: 1000px; }
 
 .section { padding: 3.5rem 0; }
 .section-light { background: var(--bg-alt); }
+.section-light .container {
+  max-width: 800px;
+  margin:  0 auto;
+}
 
 /* Header */
 .site-header {
