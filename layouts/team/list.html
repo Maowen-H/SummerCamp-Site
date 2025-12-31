@@ -1,71 +1,161 @@
-{{ define "main" }}
-<section class="section">
-  <div class="container">
-    <h1>Program Team</h1>
-    <p class="page-subtitle">
-      Faculty, staff, and mentors involved in the Summer Research Training Program.
-    </p>
-
-    <div class="team-grid">
-      <!-- 示例卡片 1 -->
-      <article class="team-card">
-        <!-- 图片可以先注释掉，之后再放 -->
-        <!-- <div class="team-photo"></div> -->
-        <h3>Prof. Jane Doe</h3>
-        <p class="team-role">
-          Program Director · Department of Computer Science
-        </p>
-        <p class="team-affiliation">
-          NC State University
-        </p>
-        <p>
-          Research interests: human-computer interaction, computing education, and interactive systems.
-        </p>
-        <a href="https://example.com" target="_blank" class="team-link">
-          Faculty profile
-        </a>
-      </article>
-
-      <!-- 示例卡片 2 -->
-      <article class="team-card">
-        <!-- <div class="team-photo"></div> -->
-        <h3>Prof. John Smith</h3>
-        <p class="team-role">
-          Co-PI · Department of Electrical and Computer Engineering
-        </p>
-        <p class="team-affiliation">
-          NC State University
-        </p>
-        <p>
-          Research interests: signal processing, embedded systems, and interdisciplinary applications.
-        </p>
-        <a href="https://example.com" target="_blank" class="team-link">
-          Faculty profile
-        </a>
-      </article>
-
-      <!-- 示例卡片 3 -->
-      <article class="team-card">
-        <!-- <div class="team-photo"></div> -->
-        <h3>Graduate Mentor (TBD)</h3>
-        <p class="team-role">
-          Graduate Research Mentor
-        </p>
-        <p class="team-affiliation">
-          NC State University
-        </p>
-        <p>
-          Mentor details will be added as the program roster is finalized.
-        </p>
-        <span class="team-link">
-          Profile coming soon
-        </span>
-      </article>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team – CyberTraining program 2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="/">CyberTraining program 2025</a>
+        <!-- <span class="logo-sub">NC State Lab</span> -->
+      </div>
+      <nav class="nav">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/materials/" class="nav-link">Materials</a>
+        <a href="/schedule/" class="nav-link">Schedule</a>
+        <a href="/team/" class="nav-link">Team</a>
+        <a href="/apply/" class="nav-link">Apply</a>
+      </nav>
     </div>
+  </header>
 
-    <p class="team-note">
-      A complete list of mentors and staff will be added here as details are finalized.
-    </p>
-  </div>
-</section>
-{{ end }}
+  <main class="main">
+    <section class="section">
+      <div class="container">
+        <h1>Program Team</h1>
+        <p class="page-subtitle">Faculty, staff, and mentors involved in the Summer Research Training Program.</p>
+
+        <h2 class="team-section-title">Principal Investigators</h2>
+        <div class="team-grid">
+          <article class="team-card">
+            <!-- <img class="team-avatar-img" src="/images/xipeng-shen.jpg" alt="Prof. Jinyuan Jia"> -->
+            <div class="team-avatar-placeholder">JY</div>
+            <div class="team-info">
+              <h3>Prof. Jinyuan Jia</h3>
+              <p class="team-role">Principal Investigator (PI)</p>
+              <p class="team-affiliation">Penn State University</p>
+              <p class="team-desc"><strong>Role:</strong> TBD</p>
+              <a href="https://jinyuan-jia.github.io/" class="team-link" target="_blank" rel="noopener noreferrer">Faculty profile</a>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <div class="team-avatar-placeholder">HL</div>
+            <div class="team-info">
+              <h3>Prof. Huining Li</h3>
+              <p class="team-role">Principal Investigator (PI)</p>
+              <p class="team-affiliation">NC State University</p>
+              <p class="team-desc"><strong>Role:</strong> TBD</p>
+              <a href="https://huining-li.github.io/" class="team-link" target="_blank" rel="noopener noreferrer">Faculty profile</a>
+
+            </div>
+          </article>
+        </div>
+
+        <h2 class="team-section-title">Student Contributors</h2>
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="team-avatar-placeholder">MH</div>
+            <div class="team-info">
+              <h3>Maowen Huang</h3>
+              <p class="team-role">Student Contributor</p>
+              <p class="team-affiliation">NC State University</p>
+              <p class="team-desc"><strong>Role:</strong> TBD</p>
+              <a href="#" class="team-link">Profile</a>
+            </div>
+          </article>
+          <article class="team-card">
+            <div class="team-avatar-placeholder">KS</div>
+            <div class="team-info">
+              <h3>Kunning Shen</h3>
+              <p class="team-role">Student Contributor</p>
+              <p class="team-affiliation">NC State University</p>
+              <p class="team-desc"><strong>Role:</strong> TBD</p>
+              <a href="#" class="team-link">Profile</a>
+
+            </div>
+          </article>
+        </div>
+
+        <h2 class="team-section-title">Program Advisory Board</h2> 
+<div class="team-grid"> 
+
+  <article class="team-card"> 
+    <div class="team-avatar-placeholder">JL</div> 
+    <div class="team-info"> 
+      <h3>Dr. James Lester</h3> 
+      <p class="team-role">NSF AI Institute for Engaged Learning (Leading PI)</p> 
+      <p class="team-affiliation">NC State University, Computer Science</p> 
+      <!-- <p class="team-desc"><strong>Role:</strong> Program Advisory Board</p>  -->
+      <a href="https://intellimedia.ncsu.edu/people/lester/" class="team-link" target="_blank" rel="noopener noreferrer">Faculty profile</a>
+
+    </div> 
+  </article>
+
+  <article class="team-card"> 
+    <div class="team-avatar-placeholder">LW</div> 
+    <div class="team-info"> 
+      <h3>Dr. Laurie Williams</h3>
+      <p class="team-role">Director of Secure Computing Institute</p> 
+      <p class="team-affiliation">NC State University, Computer Science</p> 
+      <!-- <p class="team-desc"><strong>Role:</strong> Program Advisory Board</p>  -->
+      <a href="https://lauriew.github.io/" class="team-link" target="_blank" rel="noopener noreferrer">Faculty profile</a>
+    </div> 
+  </article>
+
+  <article class="team-card"> 
+    <!-- <img class="team-avatar-img" src="/images/neil-gong.jpg" alt="Dr. Neil Gong"> -->
+     <div class="team-avatar-placeholder">NG</div> 
+    <div class="team-info"> 
+      <h3>Dr. Neil Gong</h3> 
+      <p class="team-role">Cybersecurity and Trustworthy AI</p> 
+      <p class="team-affiliation">Duke University, ECE</p> 
+      <!-- <p class="team-desc"><strong>Role:</strong> Program Advisory Board</p>  -->
+     <a href="https://people.duke.edu/~zg70/" class="team-link" target="_blank" rel="noopener noreferrer">Faculty profile</a>
+    </div> 
+  </article>
+
+  <article class="team-card"> 
+    <div class="team-avatar-placeholder">YW</div>
+    <div class="team-info"> 
+      <h3>Dr. Yaqing Wang</h3> 
+      <p class="team-role">Large Language Models (LLM)</p> 
+      <p class="team-affiliation">Google DeepMind</p> 
+      <!-- <p class="team-desc"><strong>Role:</strong> Program Advisory Board</p>  -->
+     <a href=" https://yaqingwang.github.io/" class="team-link" target="_blank" rel="noopener noreferrer">Professional profile</a>
+    </div> 
+  </article>
+
+  <article class="team-card"> 
+    <div class="team-avatar-placeholder">HY</div> 
+    <div class="team-info">
+      <h3>Dr. Haichao Yu</h3> 
+      <p class="team-role">Generative AI</p> 
+      <p class="team-affiliation">Adobe</p> 
+      <!-- <p class="team-desc"><strong>Role:</strong> Program Advisory Board</p>  -->
+     <a href="  https://www.linkedin.com/in/haichaoyu/" class="team-link" target="_blank" rel="noopener noreferrer">Professional profile</a>
+
+    
+    </div> 
+  </article> 
+</div>
+
+        <!-- <p class="team-note">A complete list of mentors and staff will be added here as details are finalized.</p> -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© CyberTraining program 2025 · All rights reserved.</p>
+      <div class="nsf-support">
+        <img src="/imgs/NSF_Official_logo.png" alt="National Science Foundation logo" class="nsf-logo">
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
