@@ -801,3 +801,99 @@ body {
 .scroll-indicator svg {
   animation: bounce 2s infinite 1.5s; /* 延迟 1.5s 开始跳动 */
 }
+/*2026-02-26 update: schedule Agenda TimeLine Sty;e */
+/* 概览文本样式 */
+/* .agenda-overview {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #333;
+  font-size: 0.95rem;
+} */
+
+.agenda-overview {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-radius: 12px;
+  border-left: 4px solid #3b82f6;
+}
+
+/* 1. 垂直时间线容器 - 强制去除默认圆点 */
+ul#agenda-timeline {
+  list-style: none !important;
+  list-style-type: none !important;
+  padding: 0 !important;
+  margin: 2rem 0 0 0 !important;
+  position: relative !important;
+}
+
+/* 2. 时间线左侧的那根竖线 */
+ul#agenda-timeline::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 10px !important;
+  bottom: 20px !important;
+  left: 15px !important; 
+  width: 2px !important;
+  background: #e2e8f0 !important;
+  display: block !important;
+}
+
+/* 3. 每个时间节点容器 */
+ul#agenda-timeline .timeline-item {
+  position: relative !important;
+  padding-left: 45px !important;
+  padding-bottom: 1.5rem !important;
+  margin-bottom: 0 !important;
+  list-style: none !important;
+  list-style-type: none !important;
+  display: flex !important;
+  flex-direction: column !important; /* 调整为纵向排列文字 */
+}
+
+/* 4. 彻底杀掉顽固的默认黑点！ */
+ul#agenda-timeline .timeline-item::marker {
+  content: none !important;
+  display: none !important;
+}
+
+/* 5. 画出左侧的自定义小圆点 (默认灰色) */
+ul#agenda-timeline .timeline-item::before {
+  content: '' !important;
+  position: absolute !important;
+  left: 11px !important;
+  top: 5px !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  background: #94a3b8 !important; 
+  border: 2px solid #fff !important;
+  z-index: 1 !important;
+  box-sizing: content-box !important;
+  transition: background-color 0.3s !important;
+}
+
+/* 6. 当时间到达，JS 赋予 .completed 时的样式 (圆点变绿) */
+ul#agenda-timeline .timeline-item.completed::before {
+  background: #22c55e !important;
+  box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.2) !important;
+}
+ul#agenda-timeline .timeline-item.in-progress::before {
+  background: #f59e0b !important; /* 一个非常漂亮的琥珀黄/金黄色 */
+  box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.2) !important;
+}
+/* 7. 文字排版 */
+ul#agenda-timeline .timeline-info {
+  flex: 1 !important;
+}
+ul#agenda-timeline .timeline-date {
+  font-weight: 600 !important;
+  color: #475569 !important;
+  font-size: 0.9rem !important;
+  margin-bottom: 0.2rem !important;
+}
+ul#agenda-timeline .timeline-desc {
+  margin: 0 !important;
+  color: #1e293b !important;
+  font-size: 1rem !important;
+}
